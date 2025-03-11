@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:background="@color/negro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/imagen"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_nombreapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intervall"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_descripcion_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_registro"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/blanco"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextNombres"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/azul"
+            android:hint="nombres"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded"/>
+
+        <EditText
+            android:id="@+id/editTextApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/azul"
+            android:hint="apellidos"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/azul"
+            android:hint="correo_electronico"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:hint="Telefono"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/azul"
+            android:hint="contraseña"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextRepetirContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/azul"
+            android:hint="repetir_contraseña"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded" />
+
+        <CheckBox
+            android:id="@+id/terminosCondiciones"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="terminos y condiciones"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/gris"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonRegistro"
+            android:layout_width="278dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="@color/azul"
+            android:text="@string/registro"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.589"
+            app:strokeWidth="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroText"
+            app:strokeColor="@color/blanco"
+            />
+        <TextView
+            android:id="@+id/tv_ya_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="ya tienes cuenta"
+            android:textAlignment="center"
+            android:textColor="@color/verde"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/buttonRegresar"
+            android:layout_width="278dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="@color/azul"
+            android:text="@string/Regresar_login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/blanco"
+            android:textSize="24sp"
+            app:iconTint="@color/azul"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.589"
+            app:strokeWidth="3dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroText"
+            app:strokeColor="@color/blanco" />
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+

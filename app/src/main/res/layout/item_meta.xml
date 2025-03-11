@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvNombreMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la meta" />
+
+        <TextView
+            android:id="@+id/tvProgresoMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progreso: 0%" />
+
+        <Button
+            android:id="@+id/btnActualizarProgreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar progreso" />
+
+    </LinearLayout>s
+</androidx.constraintlayout.widget.ConstraintLayout>
