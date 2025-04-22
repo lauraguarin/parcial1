@@ -80,7 +80,8 @@ class CalculadoraMetasActivity : /*@@zdwuku@@*/AppCompatActivity() {
         // Guardar resultado en SharedPreferences
         historialMetas.add(fecha + ": " + resultado)
         val editor: /*@@yuiyma@@*/android.content.SharedPreferences.Editor? = sharedPreferences.edit()
-        editor.putStringSet("historial", java.util.HashSet</*@@derojm@@*/kotlin.String?>(historialMetas))
+        editor.putStringSet("historial",
+            historialMetas?.let { java.util.HashSet</*@@derojm@@*/kotlin.String?>(it) })
         editor.apply()
 
         // Notificar al usuario

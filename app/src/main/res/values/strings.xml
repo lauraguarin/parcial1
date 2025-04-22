@@ -1,8 +1,10 @@
 <resources>
 
     <string name="intervall">Intervall</string>
-        <string name="mi_nombre">Laura valentina guarin sanchez</string>
-        <string name="registro">Registrate</string>
+    <string name="app_name">Intervall</string>
+    <string name="parcial_2">Parcial 2</string>
+    <string name="mi_nombre">Laura valentina guarin sanchez</string>
+    <string name="registro">Registrate</string>
     <string name="textoIntroductorio">Inicia una nueva aventura con CodeNative y descubre una nueva forma de ver el mundo</string>
     <string name="comienza">Comienza</string>
     <string name="texto_bienvenida_login">La aventura está por iniciar, por favor inicia sesión</string>
@@ -21,5 +23,8 @@
     <string name="Regresar_login">Regresar al Login</string>
     <string name="usuario">usuario</string>
     <string name="contraseña">contraseña</string>
+    <string name="Analisis">analisis\n</string>
+    <string name="Historico">Historicos\n</string>
+    <string name="MisDatos">Mis datos\n</string>
 
 </resources>

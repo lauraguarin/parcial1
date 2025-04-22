@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvIntroText"
         app:strokeColor="@color/blanco"
         app:strokeWidth="3dp"
-         />
+        />
 
     <TextView
         android:id="@+id/tvRegister"

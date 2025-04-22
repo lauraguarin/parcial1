@@ -1,66 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/blanco">
+
+    <LinearLayout
         android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
 
         <EditText
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded"
             android:id="@+id/etMontoObjetivo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Monto objetivo"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"/>
+
 
         <EditText
             android:id="@+id/etPlazoDeseado"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/azul"
             android:hint="Plazo deseado (meses)"
-            android:inputType="number" />
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded" />
 
         <EditText
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/gris"
+            style="@style/EditTextRounded"
             android:id="@+id/etAhorroInicial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ahorro inicial"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            />
+
 
         <EditText
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/gris"
             android:id="@+id/etTasaInteres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tasa de interés esperada"
-            android:inputType="numberDecimal" />
+            style="@style/EditTextRounded"
+            android:hint="Tasa de interés (%)"
+            android:inputType="numberDecimal"
+
+            />
 
         <Button
             android:id="@+id/btnCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calcular" />
-
-        <TextView
-            android:id="@+id/tvResultado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="" />
+            android:text="Calcular"
+            android:backgroundTint="@color/azul"
+            android:textColor="@color/blanco"/>
 
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Guardar resultado" />
+            android:text="Guardar resultado"
+            android:backgroundTint="@color/verde"
+            android:textColor="@color/negro"/>
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado aparecerá aquí"
+            android:padding="8dp"
+            android:textColor="@color/negro"
+            android:background="@color/gris"
+            style="@style/EditTextRounded"/>
 
         <ListView
             android:id="@+id/lvHistorialMetas"
+            style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp" />
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
